@@ -1,0 +1,15 @@
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+    #不从服务器拿服务信息
+    fetch-registry: false
+    #不在服务器注册
+    register-with-eureka: false
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: leyou-server
